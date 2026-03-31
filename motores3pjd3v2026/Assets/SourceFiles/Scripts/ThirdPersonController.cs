@@ -173,16 +173,6 @@ public bool IsRespawning { get; set; } = false;
             JumpAndGravity();
             GroundedCheck();
             Move();
-
-            if (Keyboard.current.oKey.wasPressedThisFrame)
-            {
-                AudioManager.Instance.PlayClip(0);
-            }
-
-            if (Keyboard.current.lKey.wasPressedThisFrame)
-            {
-                AudioManager.Instance.StopClip(0);
-            }
         }
 
         private void LateUpdate()

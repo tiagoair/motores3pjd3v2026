@@ -119,6 +119,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23048280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23048282}
+  - component: {fileID: 23048281}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &23048281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23048280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c56cfdff52a79428b05edaadbb7560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioPlayer
+  clips:
+  - {fileID: 8300000, guid: aaddc7a3e84194b81a1bc68337002670, type: 3}
+  - {fileID: 8300000, guid: fd6b6d51cfcff4925a7954922d0891f8, type: 3}
+  - {fileID: 8300000, guid: 1a91fcd19acf1e54bba0945d9f390849, type: 3}
+  selectedIndex: 0
+--- !u!4 &23048282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23048280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1205.6694, y: 1283.7059, z: -30.28573}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &25911544
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,10 +688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf1ae10a80920546b4f32f901768c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  audioSource: {fileID: 0}
-  audioClips:
-  - {fileID: 8300000, guid: fd6b6d51cfcff4925a7954922d0891f8, type: 3}
-  - {fileID: 8300000, guid: eacade5c242bd4e0db8d0ff9d7e8a6b6, type: 3}
 --- !u!4 &809461158
 Transform:
   m_ObjectHideFlags: 0
@@ -2219,6 +2264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c56cfdff52a79428b05edaadbb7560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioPlayer
+  clips: []
+  selectedIndex: 0
 --- !u!1 &1872414488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,3 +3939,4 @@ SceneRoots:
   - {fileID: 1132219078}
   - {fileID: 809461158}
   - {fileID: 476780389}
+  - {fileID: 23048282}
